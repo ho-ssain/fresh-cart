@@ -1,0 +1,163 @@
+/* Root Variables */
+:root {
+  --text-color: #ffffff;
+  --bg-color: #020e05;
+  --green-color: #3cb815;
+  --light-green-color: #c0eb7b;
+  --orange-color: #ff7e00;
+  --light-orange-color: #f75f1d;
+}
+
+@media (max-width: 1000px) {
+  header {
+    padding: 18px 60px;
+  }
+
+  .home-text {
+    padding: 0 100px;
+  }
+
+  .container img {
+    right: 100px;
+  }
+}
+
+@media (max-width: 966px) {
+  header {
+    padding: 12px 4%;
+  }
+
+  .home-text {
+    margin-top: 200px;
+  }
+
+  .home-text span {
+    font-size: 1rem;
+  }
+
+  .home-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    padding: 0.3rem 0.5rem;
+    background: var(--green-color);
+    color: var(--text-color);
+    font-weight: 400;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 0.5rem;
+    max-width: 150px;
+    font-size: 15px;
+  }
+
+  .container img {
+    width: 390px;
+  }
+
+  .products-container {
+    grid-template-columns: repeat(auto-fit, minmax(244px, auto));
+  }
+
+  #menu-icon {
+    display: initial;
+  }
+  .navbar {
+    position: absolute;
+    top: -570px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-color);
+    box-shadow: 1px 2px 11px 4px rgba(37, 140, 138, 0.15);
+    transition: 0.2s all linear;
+    text-align: center;
+    text-align: left;
+  }
+  .navbar a {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    display: block;
+  }
+
+  .navbar a:hover,
+  .navbar .home-active {
+    border-radius: 0.5rem;
+    color: var(--bg-color);
+  }
+
+  .navbar.active {
+    top: 100%;
+  }
+}
+
+@media (max-width: 810px) {
+  .container img {
+    right: 10px;
+    margin-left: 50px;
+  }
+
+  .home-text span {
+    font-size: 0.7rem;
+  }
+
+  .home-text h1 {
+    font-size: 1.2rem;
+  }
+
+  .heading h1 {
+    font-size: 1rem;
+  }
+  .about {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, auto));
+  }
+
+  .about img {
+    order: 2;
+  }
+
+  .about-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 659px) {
+  .container img {
+    right: 0;
+    width: 300px;
+  }
+}
+
+@media (max-width: 580px) {
+  .container {
+    position: relative;
+  }
+
+  .container img {
+    z-index: -1; /* Ensure the image is behind the text */
+    width: 100%;
+  }
+
+  .home-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    z-index: 1; /* Ensure the text is on top of the image */
+  }
+}
+
+@media (max-width: 530px) {
+  .header {
+    padding: 12px 2%;
+  }
+}

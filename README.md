@@ -42,12 +42,14 @@
 
 ### 📁Assets Resources
 
-- [Icons](https://boxicons.com/)
-- [Fonts](https://fonts.google.com/)
-- [Images](https://purepng.com/)
-- [Images](https://www.freepik.com/)
-- [Swiper](https://swiperjs.com/)
-- [Clip Path Maker](https://bennettfeely.com/clippy/)
+- Icons: [boxicons](https://boxicons.com/)
+- Fonts: [fonts.google](https://fonts.google.com/)
+- Images:
+  - [purepng](https://purepng.com/)
+  - [freepik](https://www.freepik.com/)
+  - [pngwing](https://www.pngwing.com/)
+- Swiper: [Swiper](https://swiperjs.com/)
+- Clip-Path: [Clip Path Maker](https://bennettfeely.com/clippy/)
 
 ### How to Use
 

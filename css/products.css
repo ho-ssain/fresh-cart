@@ -1,0 +1,91 @@
+/* Root Variables */
+:root {
+  --text-color: #ffffff;
+  --bg-color: #020e05;
+  --green-color: #3cb815;
+  --light-green-color: #c0eb7b;
+  --orange-color: #ff7e00;
+  --light-orange-color: #f75f1d;
+}
+
+.products {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.products-container .box {
+  padding: 20px;
+  box-shadow: 1px 2px 11px 4px rgba(37, 140, 138, 0.15);
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.products-container .box img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.products-container .box span {
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.products-container .box h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.products-container .box .price {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  color: var(--light-orange-color);
+}
+
+.products-container .box .price span {
+  color: var(--text-color);
+}
+
+.products-container .box .bx-cart-alt {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  background: var(--green-color);
+  font-size: 20px;
+  border-radius: 0.5rem 0 0.5rem;
+}
+
+.products-container .box .bx-cart-alt:hover {
+  background: var(--orange-color);
+  transition: 0.2s all linear;
+  cursor: pointer;
+}
+
+.products-container .box .bx-heart {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 20px;
+  color: var(--light-orange-color);
+}
+
+.products-container .box .discount {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  background: var(--light-orange-color);
+  color: var(--text-color);
+  padding: 4px 18px;
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+}

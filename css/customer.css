@@ -1,0 +1,74 @@
+/* Root Variables */
+:root {
+  --text-color: #ffffff;
+  --bg-color: #020e05;
+  --green-color: #3cb815;
+  --light-green-color: #c0eb7b;
+  --orange-color: #ff7e00;
+  --light-orange-color: #f75f1d;
+}
+
+.customers {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.customers h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.customer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.customer-container .box {
+  padding: 20px;
+  box-shadow: 1px 2px 11px 4px rgba(37, 140, 138, 0.15);
+  border-radius: 0.5rem;
+  border-bottom: 7px solid var(--green-color);
+}
+
+.customer-container .box:hover {
+  transform: translateY(10px);
+  transition: 0.2s all linear;
+}
+
+.customer-container .box .bx {
+  font-size: 24px;
+  color: var(--green-color);
+}
+
+.customer-container .box .stars .bx {
+  font-size: 1rem;
+  color: var(--light-orange-color);
+}
+
+.customer-container .box p {
+  font-size: 0.938rem;
+}
+
+.review-profile {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  column-gap: 0.5rem;
+}
+
+.review-profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.review-profile h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}

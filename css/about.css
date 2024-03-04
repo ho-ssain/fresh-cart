@@ -1,0 +1,29 @@
+/* Root Variables */
+:root {
+  --text-color: #ffffff;
+  --bg-color: #020e05;
+  --green-color: #3cb815;
+  --light-green-color: #c0eb7b;
+  --orange-color: #ff7e00;
+  --light-orange-color: #f75f1d;
+}
+
+.about {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(21rem, auto));
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.about-text span {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--green-color);
+}
+
+.about-text p {
+  margin: 0.5rem 0 1rem;
+}
